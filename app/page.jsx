@@ -1,13 +1,27 @@
 import Sidemenu from "./component/Sidemenu.jsx";
 import Navbar from "./component/Navbar.jsx";
+import Content from "./component/Content.jsx";
 export default function Home() {
   return (
     <section className="content">
       <div className=" drawer lg:drawer-open ">
           <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-          <div className="drawer-content">
-            <div className="main-menu  ">
+          <div className="drawer-content bg-red-200/25">
+              <div className="main-menu">
                 <Navbar/>
+                <div className="max-w-screen-xl p-10">
+                  <div className="grid grid-cols-3 gap-20">
+                    
+                    <Content/>
+                    {/* another tab */}
+                    <div className="p-4 col-span-1">
+                        <div className="posting p-4 bg-white flex  shadow-sm rounded-md justify-between">
+                          <p>Today Trending</p>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
               </div>
           </div> 
           <div className="drawer-side shadow-md">
