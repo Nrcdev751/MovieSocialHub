@@ -9,15 +9,18 @@ export default function Home() {
           <div className="drawer-content bg-red-200/25">
               <div className="main-menu">
                 <Navbar/>
-                <div className="max-w-screen-xl p-10">
-                  <div className="grid grid-cols-3 gap-20">
+                <div className="hidden md:block">
+                  <br /><br />
+                </div>
+                <div className="max-w-screen-xl md:p-10">
+                  <div className="grid md:grid-cols-3 lg:grid-cols-12 gap-20">
                     
+                    <div className="hidden lg:block lg:col-span-3"></div>
                     <Content/>
                     {/* another tab */}
-                    <div className="p-4 col-span-1">
-                        <div className="posting p-4 bg-white flex  shadow-sm rounded-md justify-between">
-                          <p>Today Trending</p>
-
+                    <div className="p-4 md:col-span-1 lg:col-span-3 hidden md:block">
+                        <div className="posting p-4 w-100 bg-white flex  shadow-sm rounded-md justify-between">
+                          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur cumque ea eligendi animi, fuga dolores aut ad repellat nulla odit, quos corporis omnis hic eaque nesciunt consectetur reprehenderit quas maiores.</p>
                         </div>
                     </div>
                   </div>
