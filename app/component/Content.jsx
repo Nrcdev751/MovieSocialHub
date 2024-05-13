@@ -11,12 +11,10 @@ import { IoIosArrowDown } from "react-icons/io";
 export default function Content(){
     return(
       <div className="md:p-4 md:col-span-2 lg:col-span-6">
-          <div className="posting p-4 bg-white   shadow-md rounded-md">
+          <div className="posting p-4 bg-white shadow-md rounded-md">
               <Postwrite />
           </div>
-              <Post />
-             
-          
+              <Post /> 
       </div>
     )
 }

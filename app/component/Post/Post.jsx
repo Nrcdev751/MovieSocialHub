@@ -19,13 +19,13 @@ export default function Post(){
                             <div className="flex items-center ms-2">
                               <CiTimer className="text-sm text-slate-500/75"/>
                               <small className="text-slate-500/75"> 12 minutes ago on</small>
-                              <small className="font-bold ms-1">Front-end Developer</small>
+                              <small className="font-bold ms-1 text-red-500/75">Front-end Developer</small>
                             </div>
                           </div>
                         </div>
                         <div className="header-posting-right flex items-center">
-                          <IoBookmarkOutline className="text-lg duration-200 cursor-pointer  text-slate-600/75 hover:text-slate-800"/>
-                          <CiMenuKebab className="text-lg ms-2 duration-200 cursor-pointer text-slate-600/75 hover:text-slate-800"/>
+                          <IoBookmarkOutline className="text-lg duration-200 cursor-pointer  text-slate-600/75 hover:text-red-500/75"/>
+                          <CiMenuKebab className="text-lg ms-2 duration-200 cursor-pointer text-slate-600/75 hover:text-red-500/75"/>
                         </div>
                     </div>
                   <p className="my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem sapiente culpa explicabo facere atque neque, consequuntur esse magnam accusantium saepe dignissimos perferendis dolores quasi odio ex! Dolores illum eligendi officia!</p>
