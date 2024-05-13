@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.topic small{
+    font-size: 12px;
+}
+
+.sidebar  {
+    background-color: #fff !important;
+}
