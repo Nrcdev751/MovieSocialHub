@@ -79,7 +79,7 @@ export default function Home() {
                         <div className="profile justify-center flex items-center flex-col" >
                               <Image className="w-20 h-20 rounded-full" src={profile} alt="" />
                               <p className="mt-4 font-bold">Narongchai</p>
-                              <p>"Never Stop Learning"</p>
+                              <p>&apos;&apos; Never Stop Learning &apos;&apos;</p>
                         </div>
                         <div className="profile-status flex justify-center my-4 items-center">
                           <small className="mx-2">2 Post</small>
