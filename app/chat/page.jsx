@@ -113,28 +113,28 @@ export default function Chat() {
                       <small className="text-red-600 bg-red-300/25 rounded-full p-1 w-5 h-5 flex justify-center items-center ">4</small>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <Image width={120} height={120} alt="tset" className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
                           <p >Friend1</p>
                           <p className="text-slate-400 text-sm">40 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <Image width={120} height={120} alt="tset" className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
                           <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <Image width={120} height={120} alt="tset" className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
                           <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <Image width={120} height={120} alt="tset" className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
                           <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>

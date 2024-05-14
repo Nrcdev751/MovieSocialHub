@@ -1,4 +1,5 @@
 import { IoIosArrowDown } from "react-icons/io";
+import Image from 'next/image'
 export default function Trending(){
     return(
         <>
@@ -35,7 +36,7 @@ export default function Trending(){
                             <small className="font-bold ">Suggested Community</small>
                             <small className="">View all</small>
                           </div>
-                          <img src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="rounded-t-lg" alt="" />
+                          <Image width={1200} height={120} src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" className="rounded-t-lg w-full" alt="" />
                           <div className="community-infomation flex flex-col p-4 bg-white shadow-sm rounded-b-lg">
                             <small className="font-bold">Animehub community</small>
                             <small className="text-slate-800/75 mt-2">500 members 10 post/day</small>

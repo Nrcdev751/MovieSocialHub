@@ -3,6 +3,7 @@ import { FaUsers } from "react-icons/fa";
 import { FaShoppingBasket } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { FaNewspaper } from "react-icons/fa";
+import Image from 'next/image'
 export default function Sidemenu(){
     return(
         <>
@@ -39,28 +40,28 @@ export default function Sidemenu(){
                     <small className="text-red-600 bg-red-300/25 rounded-full p-1">29</small>
                 </div>
                 <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                    <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <Image width={1200} height={1200} className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div className="comm-text flex flex-col ms-2">
                         <p >Marvel fan community</p>
                         <p className="text-slate-400 text-sm">40 members</p>
                     </div>
                 </div>
                 <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                    <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <Image width={1200} height={1200} className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div className="comm-text flex flex-col ms-2">
                         <p >Moviereview</p>
                         <p className="text-slate-400 text-sm">25 members</p>
                     </div>
                 </div>
                 <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                    <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <Image width={1200} height={1200} className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div className="comm-text flex flex-col ms-2">
                         <p >Moviereview</p>
                         <p className="text-slate-400 text-sm">25 members</p>
                     </div>
                 </div>
                 <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                    <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <Image width={1200} height={1200} className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                     <div className="comm-text flex flex-col ms-2">
                         <p >Moviereview</p>
                         <p className="text-slate-400 text-sm">25 members</p>
