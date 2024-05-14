@@ -4,12 +4,14 @@ import { CiLink } from "react-icons/ci";
 import { CiMap } from "react-icons/ci";
 import { BsEmojiSmile } from "react-icons/bs";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
+import Image from 'next/image'
+import profile from '../../src/profile.jpg'
 
 export default function Postwrite(){
     return(
             <>
                 <div className="posting-input flex" >
-                    <img className="w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                    <Image className="w-8 h-8 rounded-full" src={profile} alt="" />
                     <input type="text" className="bg-red-200/25 rounded-full mx-2 w-full px-2 focus:outline-slate-100 text-sm" placeholder="  What's on your mind?" />
                 </div>
                 <div className="posting-interaction flex justify-between mt-4 items-center">

@@ -6,6 +6,8 @@ import { IoChatbubbleEllipses } from "react-icons/io5";
 import { IoChatboxSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
+import profile from '../src/profile.jpg'
+import Image from 'next/image'
 
 import Link from 'next/link'
 
@@ -40,7 +42,10 @@ export default function Navbar(){
                       </div>
                       <p className="mx-4 hidden md:flex">Narongchai</p>
                       <div className="avatar w-10 h-10 relative">
-                        <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                        <Image
+                        className="w-10 h-10 rounded-full" 
+                        src={profile} alt=""
+                        />
                         <div className="bg-white flex items-center absolute w-4 h-4 rounded-full left-6 top-7  ">
                             <IoIosArrowDown className="text-sm" />
                         </div>

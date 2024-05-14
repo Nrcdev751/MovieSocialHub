@@ -14,7 +14,11 @@ export default function Content(){
           <div className="posting p-4 bg-white shadow-md rounded-md">
               <Postwrite />
           </div>
-              <Post /> 
+              <Post />
+              <Post />
+              <Post />
+              <Post />
+ 
       </div>
     )
 }

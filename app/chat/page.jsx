@@ -1,5 +1,4 @@
-import Sidemenu from "../component/Sidemenu.jsx";
-import Navbar from "../component/Navbar.jsx";
+
 import { FaHome } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowDown } from "react-icons/io";
@@ -9,6 +8,10 @@ import { IoChatboxSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import Link from 'next/link'
+import Mychat from "../component/Chat/Mychat";
+import Friendchat from "../component/Chat/Friendchat";
+import profile from '../src/profile.jpg'
+import Image from 'next/image'
 
 export default function Chat() {
   return (
@@ -23,8 +26,8 @@ export default function Chat() {
                       <label htmlFor="my-drawer-2" className="drawer-button me-5 lg:hidden">
                         <GiHamburgerMenu />
                       </label>
-                      <FaHome/>
-                      <p className="font-bold ms-2 hidden md:block">Home</p>
+                      <IoChatbubbleEllipses/>
+                      <p className="font-bold ms-2 hidden md:block">Chat</p>
                   </div>
                   <div className="top-menu bg-slate-100 fixed md:static flex justify-center rounded-lg  border-2 border-slate-200 hidden z-20 md:block  p-1 ">
                       <Link href="/"><small className=" text-slate-400 text-sm rounded-md duration-200 hover:bg-white hover:text-dark hover:text-sm hover:shadow-sm hover:rounded-md  p-1 px-4">Feed</small></Link>  
@@ -45,7 +48,10 @@ export default function Chat() {
                       </div>
                       <p className="mx-4 hidden md:flex">Narongchai</p>
                       <div className="avatar w-10 h-10 relative">
-                        <img className="w-10 h-10 rounded-full" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <Image
+                        className="w-10 h-10 rounded-full" 
+                        src={profile} alt=""
+                        />
                         <div className="bg-white flex items-center absolute w-4 h-4 rounded-full left-6 top-7  ">
                             <IoIosArrowDown className="text-sm" />
                         </div>
@@ -74,13 +80,20 @@ export default function Chat() {
                     </div>
                 
                 <div className="max-w-screen-xl ">
-                  <div className="grid md:grid-cols-12">
-                    <div className="col-span-9">
-                      <div className="p-2 bg-blue-500"></div>
+                  <div className="grid md:grid-cols-12 h-screen">
+                    <div className="col-span-9  container h-[85%] overflow-auto">
+                          <Friendchat />
+                          <Mychat />
+                          <Mychat />
+                        <div className="input-group  fixed w-[50%] bottom-5">
+                          <input type="text" className="bg-white p-2 shadow-sm w-full rounded-full border-2 border-slate-200 focus:outline-slate-100" placeholder="  Chat with Abdul" />
+                        </div>
+                      
+                        
                     </div>
                     {/* another tab */}
                     <div className="md:col-span-3 hidden md:block ">
-                      <div className="p-2 bg-red-500"></div>
+                      <div className="p-2"></div>
                     </div>
                   </div>
                 </div>
@@ -89,36 +102,41 @@ export default function Chat() {
           <div className="drawer-side shadow-md">
             <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label> 
             <ul className="menu p-4 w-80 min-h-full bg-white text-base-content">
+            <h3 className="text-xl font-bold text-red-400">MovieSocialhub</h3>
+            <label className="input input-bordered flex items-center gap-2 my-5">
+                <input type="text" className="grow" placeholder="Friends Search" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+            </label>
             <div className="sub-menu ">
                   <div className="topic  flex justify-between items-center">
-                      <p>My community</p>
-                      <small className="text-red-600 bg-red-300/25 rounded-full p-1">29</small>
+                      <p>Your friends</p>
+                      <small className="text-red-600 bg-red-300/25 rounded-full p-1 w-5 h-5 flex justify-center items-center ">4</small>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1712847333453-740d9665aa5d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
-                          <p >Marvel fan community</p>
+                          <p >Friend1</p>
                           <p className="text-slate-400 text-sm">40 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
-                          <p >Moviereview</p>
+                          <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1506863530036-1efeddceb993?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
-                          <p >Moviereview</p>
+                          <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>
                       </div>
                   </div>
                   <div className="commu-group cursor-pointer duration-300 hover:bg-slate-200/50 my-1 p-3 rounded-md flex items-center  ">
-                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1715558666340-f47008461cf3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                      <img className="rounded-full w-10 h-10" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                       <div className="comm-text flex flex-col ms-2">
-                          <p >Moviereview</p>
+                          <p >Friend1</p>
                           <p className="text-slate-400 text-sm">25 members</p>
                       </div>
                   </div>
