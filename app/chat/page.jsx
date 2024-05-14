@@ -82,9 +82,9 @@ export default function Chat() {
                 <div className="max-w-screen-xl ">
                   <div className="grid md:grid-cols-12 h-screen">
                     <div className="col-span-9  container h-[85%] overflow-auto">
-                          <Friendchat />
-                          <Mychat />
-                          <Mychat />
+                          <Friendchat someProp={'a'}/>
+                          <Mychat someProp={'b'}/>
+                          <Mychat someProp={'c'}/>
                         <div className="input-group  fixed w-[50%] bottom-5">
                           <input type="text" className="bg-white p-2 shadow-sm w-full rounded-full border-2 border-slate-200 focus:outline-slate-100" placeholder="  Chat with Abdul" />
                         </div>
